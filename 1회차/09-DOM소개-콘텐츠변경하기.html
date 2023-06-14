@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM 소개 & 콘텐츠 변경하기</title>
+</head>
+<body>
+  <p>인천 유나이티드 역습입니다!</p>
+  <p class="comment">에르난데스 몰고 갑니다 컷백!</p>
+  <p class="comment" id="shoot">홍시후 슈웃, 아~ 차단됩니다!</p>
+  
+  <script>  
+    const p1 = document.querySelector("p")
+    const p2 = document.querySelector(".comment")
+    const p3 = document.querySelector("#shoot")
+    
+    console.log(p1.textContent)
+    console.log(p2.textContent)
+    console.log(p3.textContent)
+    
+    p1.textContent = "전북 현대 패스를 이어갑니다."
+    p2.textContent = "아마노 준, 조규성에게로"
+    p3.textContent = "조규성 슛! 아 골대를 한참 벗어나네요~"
+  </script>
+</body>
+</html>
