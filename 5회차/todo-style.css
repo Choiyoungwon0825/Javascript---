@@ -58,6 +58,20 @@ ul > li{
   border-radius: 8px;
 }
 
+ul > li > span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px; 
+  height: 16px;
+  border-radius: 8px;
+  background-color: rgb(234, 234, 234);
+  position: absolute;
+  left: -20px;
+  bottom: 2px;
+}
+
+
 ul > li::after{
   content: "";
   position: absolute;
@@ -92,6 +106,12 @@ input[type="submit"]{
   width: 80px;
   border-radius: 8px;
   background-color: rgb(254, 229, 77);
+}
+
+
+.done{
+  color: rgb(93, 93, 93);
+  background-color: rgb(234, 234, 234);
 }
 
 .done::after{
