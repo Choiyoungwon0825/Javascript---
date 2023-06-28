@@ -7,7 +7,27 @@
   <title>데이터 통신</title>
 </head>
 <body>
-  
-  <script></script>
+
+  <button id="push">PUSH</button>
+  <hr />
+  <img src="" alt="강아지 사진">
+
+  <script>
+    
+    const api = "https://dog.ceo/api/breeds/image/random"
+    const request = new XMLHttpRequest()
+
+    document.getElementById("push").addEventListener("click", function(){
+
+      request.open("GET", api)
+      request.send()
+
+    })
+    
+    request.addEventListener("load", function(){
+      document.querySelector("img").src = JSON.parse(request.response).message
+    })
+
+  </script>
 </body>
 </html>
