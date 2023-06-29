@@ -36,16 +36,25 @@ main{
   flex-wrap: wrap;
   margin-top: 60px;
 }
-.tothetop{
+.more, .tothetop{
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  color: #FFFFFF;
-  background-color: #AB4A12;
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
+  cursor: pointer;
+}
+.more{
+  color: #FFFFFF;
+  background-color: #cd8f6b;
+  left: 100px;
+  bottom: 100px;
+}
+.tothetop{
+  color: #FFFFFF;
+  background-color: #AB4A12;
   right: 100px;
   bottom: 100px;
 }
