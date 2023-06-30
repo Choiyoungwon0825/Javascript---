@@ -1,4 +1,4 @@
-const apiRandomDogs = "https://dog.ceo/api/breeds/image/random/40"
+const apiRandomDogs = "https://dog.ceo/api/breeds/image/random/42"
 const apiAllBreeds = "https://dog.ceo/api/breeds/list/all"
 const request1 = new XMLHttpRequest()
 const request2 = new XMLHttpRequest()
@@ -17,7 +17,7 @@ function displayDogs(item){
   const dogImgDiv = document.createElement("div")
   dogImgDiv.classList.add("flex-item")
   dogImgDiv.innerHTML = `
-    <img width='200' height='200' src=${item}>
+    <img src=${item}>
   `
   main.appendChild(dogImgDiv)
 }
