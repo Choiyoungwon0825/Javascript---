@@ -22,7 +22,19 @@
       console.log(box) // 여기까지는 해봤자 화면에는 추가 X
 
       document.getElementById("container").appendChild(box)
+      
     // }
+
+    // mark 태그를 추가하자
+    let mark = document.createElement("mark")
+    // 만든 후 화면에 반영하기
+    mark.textContent= '<mark>'
+    box.append(mark)
+
+    let strong = document.createElement("strong")
+    // 만든 후 화면에 반영하기
+    strong.textContent= '<strong>'
+    box.append(strong)
   </script>
 </body>
 </html>
