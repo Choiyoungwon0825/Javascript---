@@ -1,36 +1,68 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>객체 리터럴</title>
 </head>
+
 <body>
 
-  <script> 
+  <script>
     const cat = {
       species: "포유류",
-      title: "고양이"
+      title: "고양이",
+      eat: function () {
+        console.log('응애')
+      }
     }
 
     console.log(cat)
+    console.log(cat.eat)
     console.log(cat.species)
     console.log(cat["title"])
     console.log(typeof cat)
 
     const gookhee = {
-      ...cat,
+      ...cat, // ... = spread (cat에 있는 데이터를 받아옴)
       name: "국희",
-      age: 4, 
-      favorite: ["끈", "창틀" , "햇살"]
+      age: 4,
+      favorite: ["끈", "창틀", "햇살"]
     }
 
-    console.log(gookhee)
+    console.log("-----", gookhee)
     console.log(gookhee.species)
     console.log(gookhee.favorite)
     console.log(typeof gookhee)
 
+    const todo = {
+      언제: new Date(2024, 3, 15, 13, 30),
+      무엇: "식사",
+      누구와: "혼자 또는 동료랑",
+      성사여부: false
+    }
+    console.log(todo)
+
+    const bird = {
+      parrot: "앵무새",
+      chicken: "닭",
+      penguin: "펭귄"
+
+    }
+    const animal = {
+      ...bird,
+    }
+    console.log(animal)
+
+    const color = ["노랑", "빨강"]
+    console.log(...color)
+
+
+
+
   </script>
 </body>
+
 </html>
